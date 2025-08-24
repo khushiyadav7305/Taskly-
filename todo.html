@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div><h1>Tꪖskly</h1>
+        <div class="todo-cont">
+    <input placeholder="enter you task">
+    <button>Add Task</button>
+    <ul class="ul">
+        <li>eat<button class="delete">Delete</button></li>
+        <li>sleep<button class="delete">Delete</button></li>
+    </ul>
+        </div>
+    </div>
+      
+  <!-- Popup -->
+  <div class="hello-popup">
+    <span id="popup-text">Hello Buddy 👋</span>
+  </div>
+
+  <script>
+    const messages = [
+      "Hello Buddy 👋",
+      "Glad to see you here! ✨",
+      "Let’s get things done ✅",
+      "Stay productive 💪",
+      "Small steps, big goals 🚀",
+      "Your day, your way 🌸",
+      "Organize. Focus. Shine 🌟"
+    ];
+
+    let index = 0;
+    const popupText = document.getElementById("popup-text");
+
+    setInterval(() => {
+      index = (index + 1) % messages.length;
+      popupText.textContent = messages[index];
+    }, 3000); // change every 3 seconds
+  </script>
+</body>
+<script src="todo.js"></script>
+</html>

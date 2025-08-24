@@ -1,0 +1,66 @@
+div{
+    background-color:rgb(224, 206, 212);
+    height: 700px;
+}
+
+h1{
+     background-color: rgb(91, 6, 34);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 50px;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+    
+}
+
+.todo-cont{
+  background-color: whitesmoke;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 400px;
+    max-width: 500px;
+    text-align: center;
+    align-items: center;
+     
+}
+
+.ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    
+
+}
+
+
+
+/* Popup Box */
+.hello-popup {
+  position: fixed;
+  right: 400px;
+  top: 40%;
+  background: #850e26;
+  color: #fff;
+  border-radius: 100px;
+  width: 300px;   /* fixed width */
+  height: 250px;   /* fixed height */
+  display: flex;
+  justify-content: center;  /* horizontally center */
+  align-items: center;      /* vertically center */
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: pop 1s ease-in-out;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes pop {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
